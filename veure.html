@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Què veure</title>
+  </head>
+
+  <style media="screen">
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Century Gothic;
+background: rgb(71, 52, 50);
+}
+
+h1{
+color: white;
+}
+
+
+#capcelera {
+padding: 0;
+margin: 0px;
+background-color: red;
+height: 50px;
+position: relative;
+text-align: center;
+width: 100%;
+overflow: hidden;
+z-index: 100;
+}
+
+#capcelera h1 {
+margin: 0;
+}
+
+#cos{
+text-align: center;
+overflow: auto;
+background: rgb(71, 52, 50);
+
+}
+
+h2 {
+  margin:0;
+  background: rgb(52, 197, 242);
+  text-align: center;
+
+
+}
+
+.noticia{
+  background-color: rgb(210, 209, 183);
+  width: 80%;
+  margin: 10px auto;
+  padding: 0 auto;
+  height: auto;
+  border: solid black 3px;
+  margin-top: 70px;
+}
+.noticia p{
+text-align: justify;
+margin-left: 10px;
+margin-right: 10px;
+cursor: default;
+}
+h3{
+  text-align: justify;
+  margin-left: 10px;
+  cursor: default;
+}
+
+h4{
+  text-align: justify;
+  margin-left: 10px;
+  color: red;
+}
+
+.foto{
+  width: 100%;
+  height: auto;
+}
+
+#nav{
+width: 150px;
+height: 300px;
+}
+
+.checkbox{
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: 10px;
+z-index: 1;
+cursor: pointer;
+opacity: 0;
+}
+
+.checkbox:checked ~ #minu {
+left: 0;
+position: fixed;
+transition: 0.5s;
+
+}
+
+#burguer{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+#burguer li{
+list-style-type: none;
+width: 30px;
+height: 5px;
+margin: 5px;
+background-color: white;
+}
+
+#minu{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 50px;
+left: -100%;
+transition: 0.5s;
+font-size: 28px;
+background-color: rgb(135, 68, 68);
+
+}
+
+#minu li{
+font-size: 25px;
+text-align: justify;
+padding-left: 10px;
+border-bottom: 1px solid black;
+height: 50px;
+}
+
+#minu li:hover{
+background: rgba(218, 221, 199, 0.35);
+}
+
+#peu{
+  background-color: red;
+  padding: 15px;
+  text-align: center;
+  height: 5px;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
+</style>
+
+
+
+  <body>
+
+    <div id="capcelera">
+         <h1> Guia Milà</h1>
+            <div id="nav">
+               <input type="checkbox" class="checkbox"/>
+                   <ul id="burguer">
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                   </ul>
+               <ul id="minu">
+                 <li><a href="index.html">Inici</a></li>
+                 <li><a href="informacio.html">Informació</a></li>
+                 <li><a href="arribar.html">Com Arribar</a></li>
+                 <li><a href="moverte.html">Com Desplaçar-se</a></li>
+               </ul>
+           </div>
+    </div>
+
+    <div id="cos">
+
+          <div class="noticia">
+            <h2>Duomo</h2>
+            <img src="Fotos/Duomo_RGB.jpg" alt="" class="foto">
+
+          <br><p>És un dels llocs més importants de la ciutat, amb 157 metres de longitud, 11.700 metres quadrats i espai per més de 40.000 persones, és una de les catedrals catòliques més grans del món.</p></br>
+
+          <br><p>La construcció de la catedral es va dur a terme durant cinc segles, en els que diferents arquitectes, escultors i artistes van aportar la seva contribució. El resultat de tot aquest treball va ser una arquitectura única que fusiona l’estil gòtic internacional amb la tradició llombarda.</p></br>
+
+          <br><p>A l’interior, és aconsellable explorar la càmera octogonal subterrània, on és troben les restes de Sant Carles de Borromeo i l’erari adjacent.
+            <p>El museu del Duomo està just al costat i també es interessant.</p></br>
+
+          <br><p>En una volta del sostre que està darrera de l’altar és guarda un dels tresors de la catedral, un clau de la creu de Crist. El dissabte més proper al 14 de setembre es treu el clau del lloc en el qual és guarda per al fet que els més fidels el puguin admirar.</p>
+
+          <br><p>A l’exterior, en la part superior té infinitat de pinacles i torres coronades per estàtues. Al punt més alt del temple és troba una estàtua de coure daurat esculpida per Giuseppe Perego en 1774, és coneix com la Madonnina i és el símbol de Milà.
+          <br><p>Segons la tradició, cap edifici ha de ser més alt que la Madonnina.</p></br>
+
+          <p><h4>Important</h4></p>
+          <p>Per entrar al Duomo és necessari tenir en compte que encara que sigui estiu i faci molta calor, és necessari portar els genolls coberts i alguna cosa sobre l’espatlla.</p></br>
+
+        </div>
+
+          <div class="noticia">
+            <h2>Galleria Vittorio Emanuele II</h2>
+            <img src="Fotos/VittorioEmanuele_RGB.jpg" alt="" class="foto">
+            <br><p>És una galeria comercial dissenyada al segle XIX on es troben les tendes més famoses de Milà. Està situada entre la Piazza del Duomo i la Piazza della Scala, es va construir amb el fi de comunicar les dues places més boniques de Milà i en poc temps es va convertir en un dels llocs més populars de la ciutat.</p></br>
+            <br><p>A l’octàgon central de la galeria es troba un mosaic que té l’escut familiar dels Savoia amb un “famós” toro. Segons la tradició, tindrà bona sort el que faci un gir sencer sobre el toro, amb el peu dret i els ulls tancats. Si es fa el 31 de desembre a les 24:00 hores, la sort durarà tot l’any nou!</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Pinacoteca Di Brera</h2>
+          <img src="Fotos/Pinacoteca_RGB.jpg" alt="" class="foto">
+          <br><p>És el principal museu de Milà i un dels més importants del món per les seves prestigioses col·leccions de pintura antiga i moderna. Totes les obres es troben ordenades cronològicament i agrupades en funció de l’escola a la qual pertanyen al llarg de les 38 sales del museu.</p></br>
+          <br><p>A l’interior es poden contemplar obres molt importants com un Sant Francisco del Greco, l’Últim Sopar de Rubens, dos retrats de dames de Van Dyck i Rembrandt, el Crist Mort de Mantegna o un Sant Jerónimo de l’última època de Tiziano, a més d’una destacadíssima col·lecció de pintura italiana.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Piazza della Scala</h2>
+            <img src="Fotos/PiazzaScala_RGB.jpg" alt="" class="foto">
+            <br><p>És una plaça per als vianants de Milà que aquesta connectada amb la plaça del Duomo per la Galeria Vittorio Emanuele II. A més del Teatre Alla Scala podem trobar diferents edificis importants per a la ciutat com el Palau Marí que és l’actual seu de l’ajuntament de Milà, la Banca Comercial Italiana i el Palau Beltrami.</p></br>
+            <br><p>Presidint la plaça trobem un monument de Leonardo Da Vinci. Com a curiositat, els milanesos criden a aquest monument “on litter in quatter”, fent al·lusió a la seva forma, assemblant-se Leonardo a una ampolla de vi i els seus deixebles a quatre gots.</p></br>
+
+          </div>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Teatro alla Scala</h2>
+            <img src="Fotos/TeatroScala_RGB.jpg" alt="" class="foto">
+            <br><p>Amb una capacitat per 2030 persones, és un dels teatres d’òpera més famós del món.
+            <p>El teatre sol obrir les seves portes el 7 de Desembre, dia de Sant Ambrosio, que és el sant patró de Milà.</p></br>
+            <br><p>Totes les obres representades en el teatre han d’acabar abans de mitjanit.
+            <p>Actualment el teatre compta amb un museu en el seu interior, amb una extraordinària col·lecció de pintures, esbossos, estàtues i altres documents relacionats amb l’òpera.</p></br>
+
+
+
+          </div>
+
+          <div class="noticia">
+            <h2>Castell Sforzesco</h2>
+            <img src="Fotos/CastilloSforzesco_RGB.jpg" alt="" class="foto">
+            <br><p>Es va construir per utilitzar-ho de fortalesa durant el segle XIV i és un dels monuments més emblemàtics de Milà. Durant anys se li va considerar un símbol de tirania i ocupació estrangera, i va estar a punt de ser demolit diverses vegades, fins que va ser transformat en un gran centre cultural, seu de diversos museus.</p></br>
+            <br><p>En el seu interior alberguen alguns dels millors museus. Encara que no estiguis interessat en els museus, sempre pots entrar a conèixer l’extens pati central del castell que es troba oberta al públic.</p></br>
+          </div>
+
+          <div class="noticia">
+            <h2>Cementiri monumental de Milà</h2>
+            <img src="Fotos/Cementerio_RGB.jpg" alt="" class="foto">
+            <br><p>Destaca pel gran número de tombes d’alt nivell artístic que té, mes que un cementeri és un museu a l’aire lliure que mostra impressionants obres realitzades des del segle XIX fins ara.
+            Va ser construït per unificar els petits i insalubres cementiris que es trobaven distribuïts per la ciutat.</p></br>
+            <br><p>El cementiri té tres sectors: el Famedio (Temple de la fama), és on estan sepultats els ciutadans més promitents, el Ossario, on estan les sepultures més antigues i el Temple Crematori, aquest va ser el primer d’Itàlia i actualment està en desús.</p></br>
+            <br><p>En els seus 250.000 metres quadrats de superfície hi ha més de 15.000 monuments.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Plaça Gae Aulenti</h2>
+            <img src="Fotos/GaeAulenti_RGB.jpg" alt="" class="foto">
+            <br><p>És el monument més actual de Milà, va ser inaugurada el 8 de desembre de 2012 i dedicada a la famosa arquitecta italiana (Gaetana Aulenti).</p></br>
+            <br><p>Al voltant de la Plaça es troben diferents edificis amb un disseny sorprenent. Per gaudir de les millors vistes de la ciutat, podeu pujar a l’alt de la Unicredit Tower que, amb una altura de 231 metres, s’ha convertit en el gratacel més alt d’Itàlia.</p></br>
+            <br><p>La plaça compta amb infinitat de tendes, restaurants i bars, juntament amb el barri dels Navigli, és la zona amb més ambient nocturn de Milà.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Santa Maria delle Grazie</h2>
+            <img src="Fotos/SantaMaria_RGB.jpg" alt="" class="foto">
+            <br><p>Aquesta església és una de les més famoses de Milà, el motiu de la seva fama és que en el seu interior es troba la considerada com a millor obra de Leonardo da Vinci, L’últim sopar.</p></br>
+            <br><p>Per aquest motiu, i per conservar gran part de la seva estructura original, el complex d’església i convent va ser declarat Patrimoni de la Humanitat per la UNESCO en 1980.</p></br>
+            <br><p>Leonardo da Vinci va treballar en aquest gran mural, realitzant una tècnica no tradicional. Aquesta obra és considerada una obra mestra, probablement la més important de l’artista.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Piazza Mercanti</h2>
+            <img src="Fotos/Mercanti_RGB.jpg" alt="" class="foto">
+            <br><p>És un dels llocs amb més encant de Milà. Es troba a escassos 50 metres de la plaça del Duomo.
+            <p>Com el seu nom indica, la plaça va ser fins als anys vint del passat segle un lloc d’intercanvi de mercaderies, bulliciós i replet de vida.</p></br>
+            <br><p>El més interessant d’aquesta Piazza és el contrast entre els diferents estils arquitectònics dels edificis que li donen forma, al costat d’aquest evident caràcter medieval que fa possible, amb una mica d’imaginació, un divertit viatge en el temps.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Església de Sant Lorenzo Maggiore</h2>
+            <img src="Fotos/SanLorenzo_RGB.jpg" alt="" class="foto">
+            <br><p>Edificada en el segle IV, és l’església més antiga de Milà. Enfront de l’església es troben diverses restes romanes del segle III.</p></br>
+            <br><p>Dedicada al màrtir cristià Sant Lorenzo, l’Església de Sant Lorenzo Maggiore va ser construïda amb les restes extretes d’altres jaciments romans.</p></br>
+            <br><p>En l’exterior de l’església també es pot veure la còpia d’una estàtua de Constantino, primer emperador romà que va pertànyer al cristianisme.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Esglesia de Sant Maurizio</h2>
+            <img src="Fotos/SanMaurizio_RGB.jpg" alt="" class="foto">
+            <br><p>Pot arribar a passar desapercebuda pel disseny discret de la seva façana. Està situada en un cèntric carrer, no gaire lluny del Duomo, i la senzillesa del seu exterior fa que el seu meravellós interior resulti encara més sorprenent.</p></br>
+            <br><p>El que impacta de Sant Maurizio són els frescs que adornen les seves parets. Perfectament conservats i restaurats, les seves dimensions i el seu colorit, intacte durant segles, criden l’atenció. Es tracta d’obres murals d’alguns dels més importants pintors del renaixement lombarde, entre els quals destaquen Bernardino Luini i Paolo Lomazzo.</p></br>
+            <br><p>Val la pena fixar-se en el delicat cadirat en fusta del cor i en l’espectacular orgue de l’any 1554, obra de Giacomo Antegnali, que encara deixa sentir els seus imponents concordes en ocasions especials i concerts programats.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>San Siro</h2>
+            <img src="Fotos/SanSiro_RGB.jpg" alt="" class="foto">
+            <br><p>L’estadi de Sant Siro quan juga el Milà o Giuseppe Meazza quan ho fa l’Inter de Milà, conegut com “el temple del futbol” és un espectacular estadi on han tingut lloc alguns dels esdeveniments esportius més importants d’Itàlia. Els dos equips de la ciutat, l’Inter i l’A.C.Milan disputen aquí els seus partits com a local en un ambient, per a molts, únic.</p></br>
+
+            <br><p>Va ser inaugurat el 19 de setembre de 1926 i amb una capacitat de 81.277 espectadors, és l’estadi més gran d’Itàlia.</p></br>
+
+          </div>
+
+
+    </div>
+
+
+
+
+    <div id="peu">
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Com Desplaçar-se</title>
+  </head>
+
+  <style media="screen">
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Century Gothic;
+background: rgba(64, 56, 56, 0.86);
+}
+
+h1{
+color: white;
+}
+
+
+#capcelera {
+padding: 0;
+margin: 0px;
+background-color: red;
+height: 50px;
+position: relative;
+text-align: center;
+width: 100%;
+overflow: hidden;
+z-index: 100;
+}
+
+#capcelera h1 {
+margin: 0;
+}
+
+#cos{
+text-align: center;
+overflow: auto;
+background: rgb(71, 52, 50);
+
+}
+
+h2 {
+  margin:0;
+  background: rgb(81, 182, 39);
+  text-align: center;
+
+
+}
+
+.noticia{
+  background-color: rgb(210, 209, 183);
+  width: 80%;
+  margin: 10px auto;
+  padding: 0 auto;
+  height: auto;
+  border: solid black 3px;
+  margin-top: 70px;
+}
+.noticia p{
+text-align: justify;
+margin-left: 10px;
+margin-right:  10px;
+cursor: default;
+
+}
+h3{
+  text-align: justify;
+  margin-left: 10px;
+  cursor: default;
+}
+h4{
+  text-align: justify;
+  margin-left: 10px;
+  cursor: default;
+}
+.foto{
+  width: 100%;
+  height: auto;
+}
+
+#nav{
+width: 150px;
+height: 300px;
+}
+
+.checkbox{
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: 10px;
+z-index: 1;
+cursor: pointer;
+opacity: 0;
+}
+
+.checkbox:checked ~ #minu {
+left: 0;
+position: fixed;
+transition: 0.5s;
+
+}
+
+#burguer{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+#burguer li{
+list-style-type: none;
+width: 30px;
+height: 5px;
+margin: 5px;
+background-color: white;
+}
+
+#minu{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 50px;
+left: -100%;
+transition: 0.5s;
+font-size: 28px;
+background-color: rgb(135, 68, 68);
+
+}
+
+#minu li{
+font-size: 25px;
+text-align: justify;
+padding-left: 10px;
+border-bottom: 1px solid black;
+height: 50px;
+}
+
+#minu li:hover{
+background: rgba(218, 221, 199, 0.35);
+}
+
+#peu{
+  background-color: red;
+  padding: 15px;
+  text-align: center;
+  height: 5px;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+}
+
+
+</style>
+
+
+
+  <body>
+
+    <div id="capcelera">
+         <h1> Guia Milà</h1>
+            <div id="nav">
+               <input type="checkbox" class="checkbox"/>
+                   <ul id="burguer">
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                   </ul>
+               <ul id="minu">
+                 <li><a href="index.html">Inici</a></li>
+                 <li><a href="informacio.html">Informació</a></li>
+                 <li><a href="veure.html">Què Veure</a></li>
+                 <li><a href="arribar.html">Com Arribar</a></li>
+               </ul>
+           </div>
+    </div>
+
+    <div id="cos">
+
+          <div class="noticia">
+            <h2>Tramvia</h2>
+            <img src="Fotos/Tranvia_RGB.jpg" alt="" class="foto">
+            <br><p>Els tramvies han estat presents  des de 1876. Actualment circulen per la ciutat alguns tramvies històrics amb més de 80 anys.
+            <p>Compta amb 18 línies de tramvia.</p>
+
+            <br><h4>On comprar els bitllets?</br></h4>
+            <p>Els bitllets es poden comprar en les parades de metro, quioscs i estancs.
+            <p>Si teniu pensat recórrer al transport públic de forma habitual, el millor és comprar diversos bitllets de forma anticipada o adquirir un abonament.</br>
+
+            <br><h4>Horari:</br></h4>
+            <p>Cada dia de 4:30/5:00 fins a les 2:00/2:30.
+            <p>(Excepte el 25 de Desembre i l’1 de Maig que és de 7.00 a 19.30)</br>
+
+
+
+
+          </div>
+
+          <div class="noticia">
+            <h2>Bicicleta</h2>
+            <img src="Fotos/Bici_RGB.jpg" alt="" class="foto">
+            <p>Milà gairebé no té pujades, encara que sí que hi ha carrers que són més difícils de transitar per estar empedrats; no obstant això, si t’agrada anar amb bici, és una alternativa fabulosa per conèixer la ciutat.
+            Trobaràs diversos llocs on llogar una bicicleta
+
+
+          </div>
+
+          <div class="noticia">
+            <h2>Metro</h2>
+          <img src="Fotos/Metro_RGB.jpg" alt="" class="foto">
+
+          <p>Malgrat comptar amb solament 4 línies i 111 estacions, el metre de Milà és el més extens d’Itàlia amb 94,5 quilòmetres de vies.</br>
+
+        <br><h4> On comprar els bitllets?</br></h4>
+          <p>Els bitllets es poden comprar en les parades de metro, quioscs i estancs.
+          Si necessiteu utilitzar el transport públic de forma habitual, el millor seria comprar diversos bitllets de forma anticipada o adquirir un abonament.</br>
+
+
+          <br><h4>Horari:</br></h4>
+          <p>Cada dia des de les 6:00 fins a les 00:30.
+          <p>(Excepte el 25 de Desembre i l’1 de Maig que és de 7:00 a 19:30)
+
+          </div>
+
+          <div class="noticia">
+            <h2>Taxi</h2>
+            <img src="Fotos/Taxi_RGB.jpg" alt="" class="foto">
+            <p>Encara que Milà és una ciutat relativament petita i si us allotgeu al centre probablement arribeu caminant a totes parts, en certes ocasions pot venir bé prendre un taxi.
+            <p>Al contrari que en altres ciutats, els taxis rarament paren mentre estan circulant i cal acudir a una parada o bé trucar per telèfon.
+
+
+
+
+          </div>
+
+          <div class="noticia">
+            <h2>Autobús</h2>
+            <img src="Fotos/Bus_RGB.jpg" alt="" class="foto">
+            <p>Circulen més de 80 línies d’autobusos i alguna línia de troleibús (autobusos amb cables elèctrics). És una de les millors formes de moure’s per Milà.</br>
+
+            <br><h4>On comprar els bitllets?</br></h4>
+            <p>Els bitllets d’autobús (comuns a la resta de mitjans de transport) es poden comprar en les parades de metro, quioscs i estancs. Si teniu pensat prendre el transport públic habitualment, el millor és comprar diversos bitllets de forma anticipada o adquirir un abonament.</br>
+
+            <br><h4>Horari:</br></h4> 
+              <p>Des de les 5:30/6:00 fins a les 00:30/1:45.
+              <p>(Excepte el 25 de Desembre i l’1 de Maig que és de 7.00 a 19.30)</br>
+
+
+
+
+          </div>
+
+          <div class="noticia">
+            <h2>Autobús a Linate</h2>
+            <img src="Fotos/BusLinate_RGB.jpg" alt="" class="foto">
+            <p>Si heu volat a l’aeroport de Linate, hi ha dos línies especialment importants la 73 i la X73, ja que comunica l’aeroport directament amb l’estació de metro San Babila pel preu d’un bitllet senzill.</br>
+          </div>
+
+          <div class="noticia">
+            <h2>Autobusos nocturns</h2>
+            <img src="Fotos/BusNit_RGB.jpg" alt="" class="foto">
+            <p>Hi ha 15 rutes d’autobusos nocturns que surten cada hora entre les 2:00 i les 5:00 del matí.
+            Els punts de sortida són els vuit llocs amb més vida nocturna (Valtellina amb Stelvio, Milton amb Pagà, Sturzo amb Com, Piazza XXIV Maggio, Umbria amb Tito Livio, Umbria amb XXII Març, Castelbarco amb Tantardini i Ripamonti amb Pietrasanta).<br>
+            <br><h4>On comprar els bitllets?</br></h4>
+            <p>El bitllet es compra a l’autobús nocturn directament, el preu és el mateix que un bitllet senzill.
+
+
+
+
+          </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div id="peu">
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

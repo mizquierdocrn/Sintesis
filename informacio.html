@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Informació</title>
+  </head>
+
+  <style media="screen">
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Century Gothic;
+background: rgba(64, 56, 56, 0.86);
+}
+
+h1{
+color: white;
+}
+
+
+#capcelera {
+padding: 0;
+margin: 0px;
+background-color: red;
+height: 50px;
+position: relative;
+text-align: center;
+width: 100%;
+overflow: hidden;
+z-index: 100;
+}
+
+#capcelera h1 {
+margin: 0;
+}
+
+#cos{
+text-align: center;
+overflow: auto;
+background: rgb(71, 52, 50);
+
+}
+
+h2 {
+  margin:0;
+  background: yellow;
+
+
+}
+
+.noticia{
+  background-color: rgb(210, 209, 183);
+  width: 80%;
+  margin: 10px auto;
+  padding: 0 auto;
+  height: auto;
+  border: solid black 3px;
+  margin-top: 70px;
+}
+.noticia p{
+text-align: justify;
+margin-left: 10px;
+cursor: default;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+h3{
+  text-align: justify;
+  margin-left: 10px;
+  cursor: default;
+
+}
+.foto{
+  width: 100%;
+  height: auto;
+}
+
+#nav{
+width: 150px;
+height: 300px;
+}
+
+.checkbox{
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: 10px;
+z-index: 1;
+cursor: pointer;
+opacity: 0;
+}
+
+.checkbox:checked ~ #minu {
+left: 0;
+position: fixed;
+transition: 0.5s;
+
+}
+
+#burguer{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+#burguer li{
+list-style-type: none;
+width: 30px;
+height: 5px;
+margin: 5px;
+background-color: white;
+}
+
+#minu{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 50px;
+left: -100%;
+transition: 0.5s;
+font-size: 28px;
+background-color: rgb(135, 68, 68);
+
+}
+
+#minu li{
+font-size: 25px;
+text-align: justify;
+padding-left: 10px;
+border-bottom: 1px solid black;
+height: 50px;
+}
+
+#minu li:hover{
+background: rgba(218, 221, 199, 0.35);
+}
+
+#peu{
+  background-color: red;
+  padding: 15px;
+  text-align: center;
+  height: 5px;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
+</style>
+
+
+
+  <body>
+
+    <div id="capcelera">
+         <h1> Guia Milà</h1>
+            <div id="nav">
+               <input type="checkbox" class="checkbox"/>
+                   <ul id="burguer">
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                   </ul>
+               <ul id="minu">
+                  <li><a href="index.html">Inici</a></li>
+                  <li><a href="veure.html">Què Veure</a></li>
+                  <li><a href="arribar.html">Com Arribar</a></li>
+                  <li><a href="moverte.html">Com Desplaçar-se</a></li>
+               </ul>
+           </div>
+    </div>
+
+    <div id="cos">
+
+          <div class="noticia">
+            <h2>Frases d'ajuda Català-Italià</h2>
+            <img src="Fotos/Idioma_RGB.jpg" alt="" class="foto">
+
+            <br><h3>Bàsics</h3></br>
+
+            <p>Adéu - Ciao (chao)</p>
+            <p>Bon dia - Buongiorno (buon yorno)</p>
+            <p>Bona nit - Buono sera (buono sera)</p>
+            <p>Em dic... - El meu chiamo... (mi kiamo)</p>
+            <p>Gràcies - Grazie (gratsie)</p>
+            <p>Per favor - Per favore (per favore)</p>
+            <p>De res - Prego (prego)</p>
+            <p>Si - Si (si)</p>
+            <p>No - No (no)</p>
+            <p>Disculpa - Scusa (escusa)</p>
+            <p>No entenc - Non capisco (non kapisco)</p>
+            <p>No parlo italià - Senar parlo italià (non parlo italiano)</p>
+            <p>Que significa? - Che cosa significa? (ke cosa significa?)</p>
+            <p>Parla més a poc a poc, per favor - Parli più lentament, per favore (parli piu lentament, per favore)</p>
+
+            <br><h3>Temps i hora</h3></br>
+
+            <p>Després - Dopo (dopo)</p>
+            <p>Abans - Prima (prima)</p>
+            <p>Més tard - più tardi (piu tardi)</p>
+            <p>Tard - Pomeriggio (pomeriyo) Sera (sera)</p>
+            <p>Demà - Mattino (matino)</p>
+            <p>Nit - Notte (note)</p>
+            <p>Avui - Oggi (oyi)</p>
+            <p>Ahir - Ieri (yeri)</p>
+            <p>Demà - Domani (domani)</p>
+            <p>Demà passat - Dopo domani (dopo domani)</p>
+            <p>Aquesta setmana - Questa settimana (kuesta setimana)</p>
+            <p>La setmana passada - La settimana scorsa (la setimana escorsa)</p>
+            <p>La setmana vinent - La prossima settimana (la prossima setimana)</p>
+
+            <br><h3>Indicacions</h3></br>
+
+            <p>Esquerra - Sinistra (sinistra)</p>
+            <p>Dreta - Destra (destra)</p>
+            <p>Calle - Strada (estrada)</p>
+            <p>Pots dir-me... - Lei può dirmi... (lei puo dirmi)</p>
+            <p>Com arribar a... - Come arrivare a... (come arrivare a)</p>
+            <p>On està el bany? - Dov’è il bagno? (dove il bany?)</p>
+            <p>Pot mostrar-m’ho en el mapa? - Potete mostrarmelo sulla carta? (potete mostrarmelo sula carta?)</p>
+
+            <br><h3>Per al transport</h3></br>
+
+            <p>A on va aquest tren/autobús? - Dove va questo treno/autobus? (dove va kuesto treno/autobus?)</p>
+            <p>Aquest tren/autobús es deté en...? - Questo treno/autobus si ferma a? (kuesto treno/autobus si frema a)</p>
+            <p>Porta’m a..., per favor - Portatemi a..., per favore (portatemi a..., per favore)</p>
+            <p>Quant costa arribar a...? - Quanto casta andare a...?(kuanto costa andare a...?)</p>
+            <p>Quant li dec? - Quanto le devo? (quant le devo)</p>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Festes i esdeveniments</h2>
+            <img src="Fotos/Fiestas_RGB.jpg" alt="" class="foto">
+
+
+            <br><h3>Gener</h3></br>
+
+            <p>Cavalcada dels reis Mags des del Duomo fins a Sant'Eustorgio.</p>
+
+            <br><h3>Febrer</h3></br>
+
+            <p>Carnavale Ambrosiano: Carnestoltes amb disfresses i desfilada de màscares.</p>
+
+            <br><h3>Març</h3></br>
+
+            <p>El Modit – Milanovendemoda: És la fira internacional de la Moda.</p>
+
+            <p>La Famosa carrera ciclista Milà-Sant Remo</p>
+
+            <br><h3>Abril</h3></br>
+
+            <p>Fiera dei Fiori el dilluns després de Pasqua: Fira dedicada a les plantes i les flors en el convent franciscà de Sant'Angelo.</p>
+
+            <p>Stramiliano: Una marató anual amb més de 50.000 participants</p>
+
+            <br><h3>Maig</h3></br>
+
+            <p>Festa dei Naviglio: Espectacles, exposicions, mercats i il·luminació per un dels barris emblemàtics de Milà.</p>
+
+            <p>Cortili Aperti: Jornada de portes obertes en els palaus i monuments que normalment romanen tancats al públic.</p>
+
+            <br><h3>Juny</h3></br>
+
+            <p>Festa dei Naviglioni, Sacra di San Cristoforo: El primer diumenge hi ha concerts, trobades de gastronomia, esport i artesania de Milà al llarg dels canals del barri de Navigli.</p>
+
+            <br><h3>Juliol-Agost</h3></br>
+
+            <p>Estate a Milano: Festival internacional de música, teatre i dansa.</p>
+
+            <br><h3>Setembre</h3></br>
+
+            <p>Gran Premi de fórmula 1 de Monza.</p>
+
+            <br><h3>Octubre</h3></br>
+
+            <p>Modit: Es tracta de la segona fira anual de la moda que presenta les novetats de primavera-estiu.</p>
+
+            <br><h3>Desembre</h3></br>
+
+            <p>Mercat de Sant'Ambrogio: Al voltant de l'església de Sant'Ambrogio hi ha llocs que venen artesania, productes típics, etc...</p>
+
+            <p>Començament de la temporada d'òpera en la Scala de Milà.</p>
+
+            <p>Artigianato in fiera: Fira nacional d'artesania.</p>
+
+            <p>Natale a Milano: Mercats nadalencs.</p>
+
+          </div>
+
+                <div class="noticia">
+                  <h2>Clima</h2>
+                <img src="Fotos/Clima_RGB.jpg" alt="" class="foto">
+
+            <br><h3>Tardor</h3></br>
+            <p>Juntament amb la primavera, la temporada de tardor és la millor època per viatjar a Itàlia, perquè té un clima temperat, ni molt fred, ni molta calor.</p>
+
+            <br><h3>Hivern</h3></br>
+            <p>La ciutat posseeix uns hiverns humits i freds perquè les temperatures solen descendir molt i presenten una gran diferència de clima durant el dia i la nit.</p>
+
+            <br><h3>Primavera </h3></br>
+            <p>La temperatura és la més suportable, perquè el clima és estable i no fa ni molt fred, ni molta calor. Per aquesta raó, la primavera és la millor estació per visitar la ciutat de Milà.</p>
+
+            <br><h3>Estiu</h3></br>
+            <p>Les temperatures poden superar els 40°C és per això que el clima a l'estiu arriba a ser summament calorós, no obstant això també tendeix a ser molt humit.</p>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Gastronomia</h2>
+            <img src="Fotos/Comida_RGB.jpg" alt="" class="foto">
+            <br><h3>Gastronomia</br></h3>
+
+            <p>Dins de la gastronomia de Milà, una de les més fortes tradicions és l’aperitiu. Diàriament al voltant de les 18:00, els bars de la ciutat de Milà es veuen plens de gent que anirà a degustar les seves tapes acompanyades d’un glop.</p>
+
+            <p>Milà és famosa per ser una de les ciutats més cares, no obstant això els preus en els seus restaurants guarden relació amb la qualitat del servei.</p>
+
+            <p>A pesar que Itàlia és coneguda mundialment i sobretot en la seva gastronomia per mitjà de les seves delicioses pastes, Milà posseeix com a dada curiosa en els seus aliments una atracció cap als plats creats sobre la base de la llet, mantega i formatge, sobretot com a tradició dins de la regió lombarde, elements netament deliciosos.</p>
+
+          </div>
+
+    </div>
+
+
+
+
+    <div id="peu">
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

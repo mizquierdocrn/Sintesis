@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Com arribar</title>
+  </head>
+
+  <style media="screen">
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Century Gothic;
+background: rgba(64, 56, 56, 0.86);
+}
+
+h1{
+color: white;
+}
+
+
+#capcelera {
+padding: 0;
+margin: 0px;
+background-color: red;
+height: 50px;
+position: relative;
+text-align: center;
+width: 100%;
+overflow: hidden;
+z-index: 100;
+}
+
+#capcelera h1 {
+margin: 0;
+}
+
+#cos{
+text-align: center;
+overflow: auto;
+background: rgb(71, 52, 50);
+
+}
+
+h2 {
+  margin:0;
+  background: rgb(255, 150, 11);
+  text-align: center;
+
+
+}
+
+.noticia{
+  background-color: rgb(210, 209, 183);
+  width: 80%;
+  margin: 10px auto;
+  padding: 0 auto;
+  height: auto;
+  border: solid black 3px;
+  margin-top: 70px;
+}
+.noticia p{
+text-align: justify;
+margin-left: 10px;
+margin-right:  10px;
+cursor: default;
+}
+h3{
+  text-align: justify;
+  margin-left: 10px;
+  cursor: default;
+
+}
+.foto{
+  width: 100%;
+  height: auto;
+}
+
+#nav{
+width: 150px;
+height: 300px;
+}
+
+.checkbox{
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: 10px;
+z-index: 1;
+cursor: pointer;
+opacity: 0;
+}
+
+.checkbox:checked ~ #minu {
+left: 0;
+position: fixed;
+transition: 0.5s;
+
+}
+
+#burguer{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+#burguer li{
+list-style-type: none;
+width: 30px;
+height: 5px;
+margin: 5px;
+background-color: white;
+}
+
+#minu{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 50px;
+left: -100%;
+transition: 0.5s;
+font-size: 28px;
+background-color: rgb(135, 68, 68);
+
+}
+
+#minu li{
+font-size: 25px;
+text-align: justify;
+padding-left: 10px;
+border-bottom: 1px solid black;
+height: 50px;
+}
+
+#minu li:hover{
+background: rgba(218, 221, 199, 0.35);
+}
+
+#peu{
+  background-color: red;
+  padding: 15px;
+  text-align: center;
+  height: 5px;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
+</style>
+
+
+
+  <body>
+
+    <div id="capcelera">
+         <h1> Guia Milà</h1>
+            <div id="nav">
+               <input type="checkbox" class="checkbox"/>
+                   <ul id="burguer">
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                   </ul>
+               <ul id="minu">
+                 <li><a href="index.html">Inici</a></li>
+                 <li><a href="informacio.html">Informació</a></li>
+                 <li><a href="veure.html">Què Veure</a></li>
+                 <li><a href="moverte.html">Com Desplaçar-se</a></li>
+               </ul>
+           </div>
+    </div>
+
+    <div id="cos">
+
+          <div class="noticia">
+            <h2>Com arribar des de l’aeroport de Malpensa</h2>
+            <img src="Fotos/Malpensa_RGB.jpg" alt="" class="foto">
+
+            <p><br>És l’aeroport principal, on aterren la majoria dels vols procedents de fora d’Itàlia. Malpensa es troba aproximadament a uns 45 km. de la ciutat de Milà.</p></br>
+            <p>Des d’allí tens diverses opcions:<p>
+            <p><br>Usar el servei d’autobusos que trobaràs a la terminal i que et portaran fins a l’estació central de Milà. El preu del bitllet és de 5€.</p></br>
+            <p><br>  Prendre el tren Malpensa Express, que connecta l’aeroport amb l’estació Cardona. Triga uns 40 minuts a fer el recorregut, té sortides cada mitja hora i un preu de 13€.</p></br>
+
+
+          </div>
+
+          <div class="noticia">
+            <h2>Com arribar des de Orio al Serio (Bèrgam)</h2>
+            <img src="Fotos/OrioSerio_RGB.jpg" alt="" class="foto">
+              <p><br>Si el teu vol aterra en l’aeroport de Orio al Serio, et trobaràs a uns 50 km. de Milà.
+              En el mateix aeroport hi ha un servei d’autobusos que et portaran a l’estació central de Milà, per mitjà de la companyia Autostradale.
+              <p><br>També pots optar pel tren, que et deixarà al centre de la ciutat.</p></br>
+
+          </div>
+
+          <div class="noticia">
+            <h2>Com Arribar</h2>
+          <img src="Fotos/Linate_RGB.jpg" alt="" class="foto">
+            <p><br>Les línies 73 i X73 comuniquen Linate amb l’estació de metro de Sant Babila. La línia 73 opera tots els dies cada 10 minuts, mentre que la X73 (directa) de dilluns a divendres cada 20 minuts.
+            <p><br>El preu és el d’un bitllet senzill i és la forma més econòmica d’arribar a l’aeroport o a Milà. Si es compra en l’autobús, el bitllet té un petit suplement.
+            Starfly: Surt de Linate entre les 6:10 i les 23:30 de dilluns a divendres, de 6:30 a 22:00 hores la resta de dies. Realitza parades en Lambrate i en l’Estació Central. La freqüència oscil·la entre 20 i 30 minuts depenent de l’hora del dia.
+            El temps de trajecte és de 25 minuts i el preu de 5€.
+            <p><br>Air Bus: Surt de l’Aeroport de Linate entre les 6:30 i les 23:30 hores i triga 25 minuts a arribar a l’Estació Central (Plaza Luigi de Savoia). Fa una parada intermèdia en la Plaza Dateo.
+            <p>El preu és de 5€, o 9€ si s’adquireix el bitllet d’anada i volta.</p>
+            <p><br>En tots els casos també podràs agafar un Taxi o contractar un servei de trasllat. Són dues opcions molt més còmodes però bastant més cares.</p></br>
+
+
+          </div>
+
+
+
+    </div>
+
+
+
+
+    <div id="peu">
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>
